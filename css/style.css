@@ -1,0 +1,256 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1140px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+
+.block__wrapper{
+    margin-top: 50px;
+    margin-bottom:100px;
+}
+.row{
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+}
+.col.col-33{
+    width: 33.333%;
+}
+.col-wrap{
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: #ffffff;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    height:375px;
+    position: relative;
+    display: flex;
+}
+.col-wrap-1{
+    background-color: #BFE3F3;
+}
+.col-wrap-3{
+    background-color: #EBF5FA;
+}
+.col-wrap-4{
+    background-color:#EBF5FA;
+}
+.col-wrap-6{
+    background-color: #BFE3F3;
+}
+.col-wrap-8{
+    background-color: #BFE3F3;
+}
+.background-overlay{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.col-wrap-2{
+    background-image: url(https://demos.bakerwebdev.net/coastal/wp-content/uploads/sites/10/2020/01/palm-tree-on-beach-at-sunlight-49HQ7FJ-1.jpg);
+    background-position: center center;
+    background-size: cover;
+    padding: 150px;
+}
+.col-wrap-1 .background-overlay{
+    background-image: url(https://demos.bakerwebdev.net/coastal/wp-content/uploads/sites/10/2020/01/corner-palms-bl.png);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.2;
+}
+.col-wrap-3 .background-overlay{
+    background-image: url(https://demos.bakerwebdev.net/coastal/wp-content/uploads/sites/10/2020/01/tropical-pattern-01-1.png);
+    background-position: center center;
+    opacity: 0.3;
+    filter: brightness( 100% ) contrast( 100% ) saturate( 100% ) blur( 0px ) hue-rotate( 0deg );
+}
+.col-wrap-4 .background-overlay{
+    background-image: url(https://demos.bakerwebdev.net/coastal/wp-content/uploads/sites/10/2020/01/tropical-pattern-01-1.png);
+    background-position: bottom center;
+    opacity: 0.3;
+}
+
+.col-wrap-6 .background-overlay{
+    background-image: url(https://demos.bakerwebdev.net/coastal/wp-content/uploads/sites/10/2019/12/palm.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.2;
+}
+
+.col-wrap-7{
+    background-color: #fff4f0;
+    background-image: url(https://demos.bakerwebdev.net/coastal/wp-content/uploads/sites/10/2020/01/sunset-walk-6H7VN4Y.jpg);
+    background-position: center center;
+    background-size: cover;
+    padding: 130px;
+}
+.col-wrap-8 .background-overlay{
+    background-image: url(https://demos.bakerwebdev.net/coastal/wp-content/uploads/sites/10/2020/01/tropical-pattern-01-1.png);
+    background-size: auto;
+    opacity: 0.2;
+}
+.col-wrap-9{
+    background-color: #fef5e7;
+    background-image: url(https://demos.bakerwebdev.net/coastal/wp-content/uploads/sites/10/2019/12/beautiful-sexy-woman-in-bikini-on-beach-during-NFEP6Y5.jpg);
+    background-position: center center;
+    background-size: cover;
+    padding: 130px;
+}
+
+
+.content-wrap{
+    display: flex;
+    position: relative;
+    width: 100%;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+    align-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.content{
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+.icon-bar{
+    line-height: 1;
+    text-align: center;
+    fill: #00143E;
+    color: #00143E;
+    border-color: #00143E;
+    font-size:45px;
+}
+.icon-bar i{
+    width: 1em;
+    height: 1em;
+    position: relative;
+    margin-bottom: 15px;
+}
+.title{
+    font-family: "Nothing You Could Do", Sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 1.9px;
+    color: #00143E;
+}
+.info{
+    color: #00143E;
+    font-family: "Open Sans", Sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    letter-spacing: 0.5px;
+}
+.content .size-full{
+    width:227px;
+    height:72px;
+}
+
+@media (min-width: 1024px) and (max-width:1199px) {
+    .col-wrap{
+        height: 275px;
+    }
+    .col-wrap-2,
+    .col-wrap-7,
+    .col-wrap-9{
+        padding: 100px;
+    }
+}
+@media (min-width: 768px) and (max-width:1023px) {
+    .col-wrap{
+        height: 275px;
+    }
+    .col-wrap-2,
+    .col-wrap-7,
+    .col-wrap-9{
+        padding: 100px;
+    }
+    .content{
+        padding: 12px;
+    }
+    .content .size-full{
+        width:198px;
+        height:62px;
+    }
+}
+@media (min-width: 576px) and (max-width:767px) {
+    .col.col-33{
+        width: 100%;
+    }
+    .col-wrap{
+        height: 242px;
+    }
+    .col-wrap-2,
+    .col-wrap-7,
+    .col-wrap-9{
+        padding: 30px 10px 30px 10px;
+    }
+    .content .size-full{
+        width:168px;
+        height:54px;
+    }
+    .col-wrap.col-wrap-5{
+        height:178px;
+    }
+    .col-wrap-5{
+        padding: 50px 10px 50px 10px;
+    }
+    .col-4{
+        order: 3;
+    }
+    .col-5{
+        order:2;
+    }
+    .col-6{
+        order: 1;
+    }
+}
+@media (min-width: 320px) and (max-width:575px) {
+    .col.col-33{
+        width: 100%;
+    }
+    .col-wrap{
+        height: 242px;
+    }
+    .col-wrap-2,
+    .col-wrap-7,
+    .col-wrap-9{
+        padding: 30px 10px 30px 10px;
+    }
+    .content .size-full{
+        width:168px;
+        height:54px;
+    }
+    .col-wrap.col-wrap-5{
+        height:178px;
+    }
+    .col-wrap-5{
+        padding: 50px 10px 50px 10px;
+    }
+    .col-4{
+        order: 3;
+    }
+    .col-5{
+        order:2;
+    }
+    .col-6{
+        order: 1;
+    }
+}
